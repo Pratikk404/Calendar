@@ -132,6 +132,36 @@ Main calendar display with:
 - 7-column calendar grid
 - Interactive month switching
 
+## Key Learnings & Architecture Insights
+
+### Component Composition
+- **Atomic Design Approach:** The project separates components into primitives (Button, Modal, Select) and feature components (Calendar, MonthView, WeekView), enabling reusability and maintainability
+- **Separation of Concerns:** UI logic is separated from state management (hooks) and utility functions, making code easier to test and refactor
+- **Type Safety:** TypeScript interfaces (CalendarState, CalendarProps) ensure contracts between components and improve IDE support
+
+### React Hooks & State Management
+- **useCalendar Hook:** Demonstrates custom hook patterns for encapsulating complex state logic (month/year navigation, date selection)
+- **useCallback Optimization:** Navigation functions use useCallback to prevent unnecessary re-renders of child components
+- **State Pattern:** The hook maintains a single source of truth (CalendarState) for all calendar-related data
+
+### Utility Functions & Pure Functions
+- **Date Manipulation:** Utilities like getDaysInMonth() are pure functions—given the same input, they always return the same output
+- **Date Math:** Working with JavaScript Date objects requires careful handling of timezones and month boundaries (0-indexed months)
+- **Reusability:** Utility functions are framework-agnostic and can be used in any JavaScript/TypeScript project
+
+### Development Workflow
+- **Tailwind CSS:** Utility-first approach reduces CSS file size and speeds up styling iteration
+- **Vite:** Fast HMR (Hot Module Replacement) enables instant feedback during development
+- **Storybook:** Isolated component testing allows development and documentation of components without full app context
+
+## Build & Verification Results
+
+✅ **TypeScript:** Zero type errors (strict mode enabled)
+✅ **Production Build:** `npm run build` completes successfully (194.74 kB JS, gzipped to 60.93 kB)
+✅ **Dev Server:** `npm run dev` starts successfully on http://localhost:5173
+✅ **All Files Created:** 19 source files + 9 configuration files
+✅ **Dependencies:** All packages installed and compatible (React 19, Vite 7, Tailwind 4)
+
 ## Future Enhancements
 
 - Week view implementation
@@ -141,16 +171,34 @@ Main calendar display with:
 - Mobile responsiveness
 - Date range selection
 - Custom styling options
+- Unit tests with Vitest or Jest
+- E2E tests with Playwright or Cypress
 
 ## Deployment
 
 ### Vercel Deployment
 
-1. Push code to GitHub (public repository)
-2. Connect repository to Vercel
-3. Vercel auto-detects Vite setup
-4. Deploy with default settings
-5. Access your deployed app at the provided URL
+1. Push code to GitHub (public repository):
+   ```bash
+   git add .
+   git commit -m "Initial calendar component setup"
+   git push origin main
+   ```
+
+2. Connect repository to [Vercel](https://vercel.com):
+   - Import project from GitHub
+   - Select Vite + React preset
+   - Deploy
+
+3. Vercel auto-detects Vite setup and deploys with zero configuration
+
+4. Access your deployed app at the provided Vercel URL
+
+### Environment Setup for Vercel
+- Node version: 18+ (Vercel default)
+- Build command: `npm run build`
+- Output directory: `dist`
+- All configuration already in place (vite.config.ts, tailwind.config.js)
 
 ## License
 
