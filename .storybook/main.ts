@@ -1,4 +1,4 @@
-import type { StorybookConfig } from '@storybook/react-vite';
+import type { StorybookConfig } from '@storybook/react';
 
 const config: StorybookConfig = {
   stories: [
@@ -7,11 +7,15 @@ const config: StorybookConfig = {
   ],
   addons: [
     '@storybook/addon-essentials',
-    '@storybook/addon-onboarding',
   ],
   framework: {
-    name: '@storybook/react-vite',
-    options: {},
+    name: '@storybook/react',
+    options: {
+      builder: '@storybook/builder-vite',
+    },
+  },
+  docs: {
+    autodocs: 'tag',
   },
 };
 export default config;
