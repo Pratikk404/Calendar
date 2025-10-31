@@ -21,6 +21,7 @@
     "@storybook/builder-vite": "^10.0.2",
     "@storybook/core-events": "^8.6.14",
     "@storybook/react": "^10.0.2",
+    "@storybook/react-vite": "^10.0.2",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "@vitejs/plugin-react": "^5.1.0",
