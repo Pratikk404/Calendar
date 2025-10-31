@@ -2,6 +2,11 @@
 
 A React calendar component built with Vite, TypeScript, and Tailwind CSS. This project provides a reusable, well-documented calendar component with month/week view switching capabilities, event management hooks, and utilities for date manipulation.
 
+## 🔗 Live Links
+
+- **App Demo:** [https://calendar-view.vercel.app](https://calendar-view.vercel.app)
+- **Storybook Preview:** [https://6904a87301ecc4e1052c3721-yaohaqdpya.chromatic.com/](https://6904a87301ecc4e1052c3721-yaohaqdpya.chromatic.com/)
+
 ## Getting Started
 
 ### Prerequisites
