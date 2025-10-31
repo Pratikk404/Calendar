@@ -23,8 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# Storybook
-storybook-static
+# Storybook (allow storybook-static for GitHub Pages deployment)
 
 # Build output
 out
