@@ -4,7 +4,7 @@ A React calendar component built with Vite, TypeScript, and Tailwind CSS. This p
 
 ## 🔗 Live Links
 
-- **App Demo:** [https://calendar-view.vercel.app](https://calendar-view.vercel.app)
+- **App Demo:** [https://calendar-view.vercel.app](https://calendar-1jy2.vercel.app/?path=/story/calendar-calendarview--default)
 - **Storybook Preview:** [https://6904a87301ecc4e1052c3721-yaohaqdpya.chromatic.com/](https://6904a87301ecc4e1052c3721-yaohaqdpya.chromatic.com/)
 
 ## Getting Started
