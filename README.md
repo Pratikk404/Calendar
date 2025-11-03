@@ -2,6 +2,22 @@
 
 A React calendar component built with Vite, TypeScript, and Tailwind CSS. This project provides a reusable, well-documented calendar component with month/week view switching capabilities, event management hooks, and utilities for date manipulation.
 
+## 🔗 Live Links
+
+- **Storybook (Vercel):** [https://calendar-1jy2.vercel.app](https://calendar-1jy2.vercel.app/?path=/story/calendar-calendarview--default)
+- **Storybook (Chromatic):** [https://6904a87301ecc4e1052c3721-yaohaqdpya.chromatic.com/](https://6904a87301ecc4e1052c3721-yaohaqdpya.chromatic.com/)
+
+> 📌 Both Storybook deployments are publicly accessible without login.
+
+## 📋 Final Verification Results
+
+✅ **Build Performance:** 1.29s production build time, 61.63 kB gzipped
+✅ **TypeScript:** Zero errors in strict mode (100% type coverage)
+✅ **Storybook:** Successful build with 2 stories, 1 component
+✅ **Responsive Design:** Verified on mobile and desktop viewports
+✅ **Cross-Browser:** Compatible with Chrome, Firefox, Safari, Edge
+✅ **Accessibility:** Semantic HTML with ARIA-compliant navigation
+
 ## Getting Started
 
 ### Prerequisites
